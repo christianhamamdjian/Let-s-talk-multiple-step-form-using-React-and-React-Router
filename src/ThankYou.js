@@ -10,6 +10,7 @@ const ThankYou = (props) => {
             <div>
             <ul>
             <li>Full name: {props.fullName}</li>
+            <li>Phone: {props.phone}</li>
             <li>Email Address: {props.emailAddress}</li>
             <li>Address: {props.address}</li>
             <li>City: {props.city}</li>

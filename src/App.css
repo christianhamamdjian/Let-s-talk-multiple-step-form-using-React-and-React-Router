@@ -107,17 +107,20 @@ label {
 .input-full {
 	width: 100%;
 	display:inline-block;
+	margin-top: 40px;
 }
 .input-quarter {
 	width: 20%;
 	margin-right: 20px;
 	margin-left: 0px;
 	display:inline-block;
+	margin-top: 40px;
 }
 .input-three-quarters {
 	width: 71%;
 	margin-right: 20px;
-	display:inline-block;
+	margin-top: 40px;
+	float:left;
 }
 ::placeholder {
 	font-size: 1em;
@@ -130,7 +133,6 @@ input[type=text] {
 	border-right: 1px solid transparent;
 	border-left: 1px solid transparent;
 	border-bottom: 1px solid #90979e;
-	margin-top: 40px;
 	color: #dfdfdf;
 	outline: none;
 }
@@ -184,7 +186,6 @@ textarea {
 	float: right;
 }
 input[type=checkbox] {
-/*	transform: scale(1);*/
 	float: left;
 	color: white;
 	visibility: hidden;
@@ -262,7 +263,6 @@ input[type=radio]:checked + label {
 
 .err-msg {
 	color: #f2842d;
-	max-width:180px;
 }
 .err-msg-invisible {
 	visibility: hidden;
@@ -283,4 +283,5 @@ input[type=radio]:checked + label {
 }
 .fields {
 	width: 100%;
+	margin-top:0px;
 }

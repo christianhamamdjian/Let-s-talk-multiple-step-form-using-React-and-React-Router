@@ -8,8 +8,8 @@ class Portfolio extends Component {
             isTouched: {
                 portfolio:false
             },
-            portfolio: '',
-            anythingelse:''
+            portfolio:props.portfolio || '',
+            anythingelse:props.anythingelse || ''
             };
         }
         handleSubmit = e => {
@@ -37,6 +37,7 @@ class Portfolio extends Component {
     
             return errors;
         };
+
     render() {
         const {portfolio} = this.state;
         const errors = this.validate(portfolio);
@@ -55,7 +56,6 @@ class Portfolio extends Component {
         id="portfolio" 
         name="portfolio-link" 
         placeholder="Portfolio link *" 
-        value="" 
         minLength="5" 
         onFocus={e => this.setState(
             prevState => ({isTouched: {...prevState.isTouched, portfolio:true}})
